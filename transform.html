@@ -14,15 +14,23 @@
             height: 100px;
             border: 2px solid #000;
             background: rgba(255, 255, 0, 0.7);
+            transition: 0.5s cubic-bezier(0.68, 0.16, 0.51, 1.48);
+
+            /* 기본값 ease */
+            /* transition: 1s linear; */
+            /* transition: 1s cubic-bezier(0.68, 0.16, 0.51, 1.48); 개발자도구 - 화살표 - transition-timing-function - 그래프 */
+            /* transition: 1s 2s;  transition-delay */ 
         }
 
         .box:hover {
+            width: 200px;
+            background: red;
             /* transform: scale(2); */
-            transform: rotate(15deg);
+            /* transform: rotate(15deg); */
             /* transform: skewY(30deg); */
             /* transform: translate(30px, 10px); */
 
-            transform-origin: right bottom;
+            /* transform-origin: right bottom; */
             /* transform-origin: 0% 0%; */
         }
     </style>
